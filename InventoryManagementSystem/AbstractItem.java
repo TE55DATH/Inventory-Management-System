@@ -16,6 +16,14 @@ public abstract class AbstractItem implements Item, Categorizable, Breakable, Pe
         this.price = price;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String getItemDetails(){   //This method will get the details of the item
         return "Name: " + name + ", Category: " + ", Price: " + price;
